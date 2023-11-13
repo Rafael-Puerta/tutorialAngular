@@ -10,7 +10,7 @@ export class AppComponent {
   newMemberName="";
   members:string[]=[];
   errorMessage:string="";
-  numberTeams:number|string="";
+  numberTeams:number=0;
   teams: string[][]=[];
   createGroups(){
     if(!this.numberTeams||this.numberTeams<=0){
@@ -40,7 +40,7 @@ export class AppComponent {
     }
     
     this.members=[];
-    this.numberTeams="";
+    this.numberTeams=0;
   }
   addMember(){
     if(!this.newMemberName){
